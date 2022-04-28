@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Javascript Tutorial Trials Page</title>
+		<script>
+		function scriptInHead(){
+		document.getElementById("demo4").innerHTML="Paragraph changed.";
+					}
+		</script>
+	</head>
+	<body>
+		<h2>What Can JavaScript Do?</h2>		
+		<p>JavaScript can change HTML attribute values.</p>
+		<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+		<button onclick="document.getElementById('myImage').src='static/pic_bulbon.gif'">Turn on the light</button>
+		<img id="myImage" src="static/pic_bulbon.gif" alt="ampul" width="100" >
+		<!-- button[onclick={"document.getElementById('myImage').src='static/pic_bulboff.gif'"}] -->
+		<button onclick="document.getElementById('myImage').src='static/pic_bulboff.gif '">Turn off the light</button>
+		<h2>Demo1</h2>
+		<p id="demo">JavaScript can change the style of an HTML element.</p>
+		<button onclick="document.getElementById('demo').style.fontSize='35px'" type="button">Click Me!</button>
+		<h2>Demo2</h2>
+		<p>JavaScript can show hidden HTML elements.</p>
+		<p id="demo2" style="display:none">Hello JavaScript</p>
+		<button onclick="document.getElementById('demo2').style.display='block'" type="button">Click to see!</button>
+		<h3>Demo3</h3>
+		<p id="demo3"></p>
+		<h2>JavaScript Functions and Events</h2>
+		<p>A JavaScript function is a block of JavaScript code, that can be executed when "called" for.</p>
+		<p>
+			For example, a function can be called when an event occurs, like when the user clicks a button. 
+		</p>
+		<h3>Demo4 JavaScript in Head</h3>
+		<p>
+			A javascript function is placed in the head section of the HTML pace. The function is invoked (called) when a button is clicked:
+		</p>
+		<p id="demo4">A paragraph</p>
+		<button onclick="scriptInHead()" type="button">Try it!</button>
+
+		<script>
+			document.getElementById("demo3").innerHTML="My First JavaScript";
+		</script>
+	</body>
+</html>

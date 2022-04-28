@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>External javascript file use demo</title>
+	</head>
+	<body>
+		<h2>Demo External JavaScript</h2>
+		<p id="demo">A Paragraph.</p>
+		<button onclick="myFunction()">Try it</button>
+		<p>This example links to "myScript.js".</p>
+		<p>(myFunction is stored in "myScript.js")</p>
+		Placing scripts in external files has sore advantages:
+		<ul>
+			<li>It separetes HTML and code</li>
+			<li>It makes HTML and JavaScript easier to read and maintain</li>
+			<li>Cached JavaScript files can speed up page loads</li>
+		</ul>
+		To add several script files to one page -use several script tags:
+		<pre>
+			&ltscript src="static/scripts/myScript.js">&lt/script>
+			&ltscript src="static/scripts/myScript2.js">&lt/script>
+		</pre>
+		<h3>External Referances</h3>
+		An external script can be referenced in F different ways:
+		<ul>
+			<li>With afull URL (a full web address)</li>
+			<li>With a file path (like /js/</li>
+			<li>Without any path</li>
+		</ul>
+		<script src="static/scripts/myScript.js"></script>
+
+	</body>
+</html>
